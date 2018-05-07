@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="029430ab-a52b-4fbe-905b-7f77412c7698" name="SYSTEM@NETEDELLLPTP-93 2018-05-06 20:39:22" runUser="NT AUTHORITY\SYSTEM" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="d3401483-245f-4bf1-8324-1dffef4fc6c1">
+    <Deployment userDeploymentRoot="C:\PINGTest\Results" useDefaultDeploymentRoot="false" runDeploymentRoot="SYSTEM_NETEDELLLPTP-93 2018-05-06 20_39_22" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Properties />
+  </TestSettings>
+  <Times creation="2018-05-06T20:39:22.6628458-04:00" queuing="2018-05-06T20:39:23.1708749-04:00" start="2018-05-06T20:39:23.2778810-04:00" finish="2018-05-06T20:39:37.9897225-04:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>-&gt; Using app.config
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="NETEDELLLPTP-93" outcome="Warning" timestamp="2018-05-06T20:39:23.1458734-04:00">
+        <Text>Warning: Test Run deployment issue: The assembly or module 'TechTalk.SpecFlow' directly or indirectly referenced by deployment item 'SpecFlow.Assist.Dynamic.dll' specified by the test 'iRePORT_PingTest.Common.Deploy.CheckDeployment' was not found.</Text>
+      </RunInfo>
+      <RunInfo computerName="NETEDELLLPTP-93" outcome="Warning" timestamp="2018-05-06T20:39:23.1468735-04:00">
+        <Text>Warning: Test Run deployment issue: The assembly or module 'TechTalk.SpecFlow.Generator' directly or indirectly referenced by deployment item 'SpecRun.SpecFlowPlugin.dll' specified by the test 'iRePORT_PingTest.Common.Deploy.CheckDeployment' was not found.</Text>
+      </RunInfo>
+      <RunInfo computerName="NETEDELLLPTP-93" outcome="Warning" timestamp="2018-05-06T20:39:23.1468735-04:00">
+        <Text>Warning: Test Run deployment issue: The assembly or module 'TechTalk.SpecFlow.Parser' directly or indirectly referenced by deployment item 'SpecRun.SpecFlowPlugin.dll' specified by the test 'iRePORT_PingTest.Common.Deploy.CheckDeployment' was not found.</Text>
+      </RunInfo>
+      <RunInfo computerName="NETEDELLLPTP-93" outcome="Warning" timestamp="2018-05-06T20:39:23.1468735-04:00">
+        <Text>Warning: Test Run deployment issue: The assembly or module 'TechTalk.SpecFlow.Utils' directly or indirectly referenced by deployment item 'SpecRun.SpecFlowPlugin.dll' specified by the test 'iRePORT_PingTest.Common.Deploy.CheckDeployment' was not found.</Text>
+      </RunInfo>
+      <RunInfo computerName="NETEDELLLPTP-93" outcome="Warning" timestamp="2018-05-06T20:39:23.1468735-04:00">
+        <Text>Warning: Test Run deployment issue: The assembly or module 'Gherkin' directly or indirectly referenced by deployment item 'SpecRun.SpecFlowPlugin.dll' specified by the test 'iRePORT_PingTest.Common.Deploy.CheckDeployment' was not found.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LoggingIntoIRePORT" storage="c:\pingtest\ireport_pingtest\bin\debug\ireport_pingtest.dll" id="4e56356e-1a15-3433-08f9-0ae4c0eef1d2">
+      <Description>Logging into iRePORT</Description>
+      <Execution id="5d306f5e-7e57-4e3d-b6ec-9d5967fe0a07" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Login</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/PINGTest/iRePORT_PingTest/bin/Debug/iRePORT_PingTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="iRePORT_PingTest.Features.LoginFeature_MSTest, iRePORT_PingTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoggingIntoIRePORT" />
+    </UnitTest>
+    <UnitTest name="CheckDeployment" storage="c:\pingtest\ireport_pingtest\bin\debug\ireport_pingtest.dll" id="f249500e-4141-6676-d0ef-4396c184f7a0">
+      <DeploymentItems>
+        <DeploymentItem filename="SpecFlow.Assist.Dynamic.dll" />
+        <DeploymentItem filename="SpecRun.SpecFlowPlugin.dll" />
+        <DeploymentItem filename="geckodriver.exe" />
+      </DeploymentItems>
+      <Execution id="a81110c5-50d8-4100-af06-3bc4d0ef4b3a" />
+      <TestMethod codeBase="C:/PINGTest/iRePORT_PingTest/bin/Debug/iRePORT_PingTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="iRePORT_PingTest.Common.Deploy, iRePORT_PingTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckDeployment" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f249500e-4141-6676-d0ef-4396c184f7a0" executionId="a81110c5-50d8-4100-af06-3bc4d0ef4b3a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e56356e-1a15-3433-08f9-0ae4c0eef1d2" executionId="5d306f5e-7e57-4e3d-b6ec-9d5967fe0a07" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a81110c5-50d8-4100-af06-3bc4d0ef4b3a" testId="f249500e-4141-6676-d0ef-4396c184f7a0" testName="CheckDeployment" computerName="NETEDELLLPTP-93" duration="00:00:00.0099792" startTime="2018-05-06T20:39:23.3038825-04:00" endTime="2018-05-06T20:39:23.5628973-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a81110c5-50d8-4100-af06-3bc4d0ef4b3a">
+      <Output>
+        <StdOut>Successfully Deployed</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5d306f5e-7e57-4e3d-b6ec-9d5967fe0a07" testId="4e56356e-1a15-3433-08f9-0ae4c0eef1d2" testName="LoggingIntoIRePORT" computerName="NETEDELLLPTP-93" duration="00:00:14.0221848" startTime="2018-05-06T20:39:23.5678976-04:00" endTime="2018-05-06T20:39:37.9487201-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5d306f5e-7e57-4e3d-b6ec-9d5967fe0a07">
+      <Output>
+        <StdOut>Given I have navigated to the login screen
+-&gt; error: Exception has been thrown by the target of an invocation.
+And I enter the username and password
+-&gt; skipped because of previous errors
+When I click Login button
+-&gt; skipped because of previous errors
+Then I should see the dashboard
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method iRePORT_PingTest.Features.LoginFeature_MSTest.LoggingIntoIRePORT threw exception: 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.TypeInitializationException: The type initializer for 'iRePORT_PingTest.Login_Main' threw an exception. ---&gt; System.InvalidOperationException: connection reset</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.Firefox.FirefoxDriver..ctor(FirefoxOptions options)
+   at OpenQA.Selenium.Firefox.FirefoxDriver..ctor()
+   at iRePORT_PingTest.Login_Main..cctor() in C:\iRePORT_PingTest\iRePORT_PingTest\Login_Main.cs:line 16
+ --- End of inner exception stack trace ---
+    at iRePORT_PingTest.Login_Main..ctor()
+ --- End of inner exception stack trace ---
+    at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at BoDi.ObjectContainer.CreateObject(Type type, ResolutionList resolutionPath, RegistrationKey keyToResolve)
+   at BoDi.ObjectContainer.TypeRegistration.Resolve(ObjectContainer container, RegistrationKey keyToResolve, ResolutionList resolutionPath)
+   at BoDi.ObjectContainer.ResolveObject(RegistrationKey keyToResolve, ResolutionList resolutionPath)
+   at BoDi.ObjectContainer.Resolve(Type typeToResolve, ResolutionList resolutionPath, String name)
+   at BoDi.ObjectContainer.Resolve(Type typeToResolve, String name)
+   at TechTalk.SpecFlow.Infrastructure.TestObjectResolver.ResolveBindingInstance(Type bindingType, IObjectContainer container)
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at iRePORT_PingTest.Features.LoginFeature_MSTest.ScenarioCleanup()
+   at iRePORT_PingTest.Features.LoginFeature_MSTest.LoggingIntoIRePORT() in C:\iRePORT_PingTest\iRePORT_PingTest\Features\Login.feature:line 6
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
